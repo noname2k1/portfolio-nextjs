@@ -44,7 +44,7 @@ const Contact = (props: Props) => {
                     <h2 className='text-[80px] xl:text-[120px] font-[900] opacity-10 capitalize'>
                         contact
                     </h2>
-                    <h3 className='text-[40px] xl:text-[50px] font-[700] absolute top-0 capitalize'>
+                    <h3 className='text-[40px] xl:text-[50px] font-[700] absolute top-5 capitalize'>
                         contact me
                     </h3>
                 </div>
