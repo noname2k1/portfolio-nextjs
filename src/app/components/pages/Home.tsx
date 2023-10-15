@@ -35,7 +35,7 @@ const Home = () => {
                     {slide === 0 ? (
                         <>
                             <span className='font-black text-3xl xl:text-6xl my-5'>
-                                I'm&nbsp;
+                                I&apos;m&nbsp;
                                 <span className='text-secondary'>Ninh Nam</span>
                             </span>
                             <span className='capitalize text-3xl'>
@@ -45,7 +45,7 @@ const Home = () => {
                     ) : (
                         <>
                             <span className='font-black text-3xl xl:text-6xl my-5'>
-                                I'm&nbsp;
+                                I&apos;m&nbsp;
                                 <span className='text-secondary'>
                                     a web developer
                                 </span>
