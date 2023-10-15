@@ -16,7 +16,7 @@ const Header = () => {
     const handleTabChange = (tab: string) => {
         setTab(tab);
         setScrolling(true);
-        // setTimeout(() => setMobileHeader(false), 1000);
+        setTimeout(() => setMobileHeader(false), 1000);
     };
 
     const handleToggleMobileHeader = () => {
@@ -55,7 +55,7 @@ const Header = () => {
     return (
         <header
             className={classNames(
-                'fixed text-white max-xl:bg-black z-10 py-5 xl:pl-10 px-20 xl:px-6 w-full xl:w-[1200px] max-xl:flex-col flex xl:items-center justify-between',
+                'fixed text-white max-xl:bg-black z-10 py-5 xl:pl-10 px-4 sm:px-20 xl:px-6 w-full xl:w-[1200px] max-xl:flex-col flex xl:items-center justify-between',
                 {
                     'bg-black': tab === 'projects'
                 }
@@ -90,9 +90,10 @@ const Header = () => {
 
             <nav
                 className={classNames(
-                    'flex max-xl:flex-col max-xl:gap-4 max-xl:my-4 duration-150',
+                    'flex max-xl:flex-col max-xl:gap-4 duration-150',
                     {
-                        'max-xl:invisible max-xl:opacity-0': !mobileHeader
+                        'max-xl:invisible max-xl:opacity-0': !mobileHeader,
+                        'max-xl:py-4': mobileHeader
                     }
                 )}
             >

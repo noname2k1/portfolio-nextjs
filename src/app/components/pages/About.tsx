@@ -35,14 +35,14 @@ const About = (props: Props) => {
     return (
         <section className='h-screen flex items-center xl:justify-center'>
             <div className=''>
-                <div className='relative'>
+                <div className='relative max-xl:flex justify-center'>
                     <h2 className='text-[90px] font-[900] opacity-10'>About</h2>
                     <h3 className='text-[50px] font-[700] absolute top-0'>
                         About Me
                     </h3>
                 </div>
 
-                <ul className='mb-4'>
+                <ul className='mb-4 px-10'>
                     {MY_INFOR.map((item) => (
                         <li key={item.id} className='flex items-center py-1'>
                             <span className='capitalize font-bold text-lg'>
@@ -56,7 +56,11 @@ const About = (props: Props) => {
                     ))}
                 </ul>
 
-                <a download href='/pdf/NinhNgocNam_WebDeveloper_CV.pdf'>
+                <a
+                    download
+                    href='/pdf/NinhNgocNam_WebDeveloper_CV.pdf'
+                    className='max-xl:flex justify-center'
+                >
                     <CustomButton variant='secondary'>Download CV</CustomButton>
                 </a>
             </div>

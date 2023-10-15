@@ -7,10 +7,10 @@ import { Provider } from 'jotai';
 export default function MainPage() {
     return (
         <Provider>
-            <div className='flex justify-center bg-primary text-white'>
-                <div className='w-[1200px] max-xl:flex max-xl:flex-col max-xl:items-center'>
+            <div className='flex xl:justify-center bg-primary text-white'>
+                <div className='xl:w-[1200px] max-xl:flex max-xl:flex-col max-xl:items-center bg-black'>
                     <Header />
-                    <main className='px-20 xl:px-6 w-full'>
+                    <main className='sm:px-20 xl:px-6 w-full'>
                         <IntersectionWrapper tab='home'>
                             <Home />
                         </IntersectionWrapper>

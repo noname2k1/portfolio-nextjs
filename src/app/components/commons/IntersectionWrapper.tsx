@@ -34,7 +34,10 @@ const IntersectionWrapper = (props: Props) => {
     }, [inView]);
 
     return (
-        <div ref={ref} className='w-full max-xl:flex max-xl:justify-center'>
+        <div
+            ref={ref}
+            className='w-full max-xl:flex max-xl:justify-center max-xl:items-center'
+        >
             {props.children}
         </div>
     );

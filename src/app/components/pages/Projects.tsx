@@ -59,20 +59,20 @@ const Projects = () => {
                     </h3>
                 </div>
 
-                <ul className='flex flex-col gap-[30px] mt-10'>
+                <ul className='flex flex-col gap-[30px] mt-10 px-4'>
                     {chunks.map((chunk, index) => {
                         return (
                             <div
-                                className='flex items-center gap-[30px]'
+                                className='flex max-xl:flex-col items-center gap-[30px]'
                                 key={index}
                             >
                                 {chunk.map((project, pid) => (
                                     <li
                                         key={project.id}
                                         className={classNames(
-                                            'h-[285px] border-2 border-white flex-1 group',
+                                            'h-[285px] border-2 max-xl:w-full border-white xl:flex-1 group',
                                             {
-                                                'flex-grow-[2]':
+                                                'xl:flex-grow-[2]':
                                                     (index % 2 === 0 &&
                                                         pid % 2 !== 0) ||
                                                     (index % 2 !== 0 &&
@@ -83,7 +83,7 @@ const Projects = () => {
                                             backgroundImage:
                                                 'url(' + project.image + ')',
                                             backgroundPosition: 'center',
-                                            backgroundSize: 'contain cover',
+                                            backgroundSize: 'contain',
                                             backgroundRepeat: 'no-repeat'
                                         }}
                                     >

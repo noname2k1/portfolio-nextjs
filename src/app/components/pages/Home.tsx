@@ -1,8 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { CustomButton } from '../commons';
+import { useAtom } from 'jotai';
+import { scrollingAtom, tabAtom } from '@/app/store/tabStore';
 
 const Home = () => {
     const [slide, setSlide] = useState<number>(0);
+    const [tab, setTab] = useAtom(tabAtom);
+    const [scrolling, setScrolling] = useAtom(scrollingAtom);
     // console.log(slide);
     useEffect(() => {
         const slideCount = 2;
@@ -16,6 +20,11 @@ const Home = () => {
         return () => clearInterval(timer);
     }, [slide]);
 
+    const handleSetTab = (tab: string) => {
+        setTab(tab);
+        setScrolling(true);
+    };
+
     return (
         <section className='h-screen flex items-center'>
             <div className='flex flex-col px-10'>
@@ -25,7 +34,7 @@ const Home = () => {
                 <div className='max-w-[50vw] flex flex-col'>
                     {slide === 0 ? (
                         <>
-                            <span className='font-black text-6xl my-5'>
+                            <span className='font-black text-3xl xl:text-6xl my-5'>
                                 I'm{' '}
                                 <span className='text-secondary'>Ninh Nam</span>
                             </span>
@@ -35,7 +44,7 @@ const Home = () => {
                         </>
                     ) : (
                         <>
-                            <span className='font-black text-6xl my-5'>
+                            <span className='font-black text-3xl xl:text-6xl my-5'>
                                 I'm{' '}
                                 <span className='text-secondary'>
                                     a web developer
@@ -46,8 +55,20 @@ const Home = () => {
                     )}
                 </div>
                 <div className='flex items-center mt-5'>
-                    <CustomButton variant='secondary'>Hire me</CustomButton>
-                    <CustomButton>My works</CustomButton>
+                    <CustomButton
+                        onClick={() =>
+                            window.open(
+                                'https://www.facebook.com/profile.php?id=100080655183981',
+                                '_blank'
+                            )
+                        }
+                        variant='secondary'
+                    >
+                        Hire me
+                    </CustomButton>
+                    <CustomButton onClick={() => handleSetTab('projects')}>
+                        My works
+                    </CustomButton>
                 </div>
             </div>
         </section>

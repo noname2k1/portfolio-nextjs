@@ -34,7 +34,7 @@ const Skills = (props: Props) => {
     return (
         <section className='h-screen flex items-center xl:justify-center'>
             <div className=''>
-                <div className='relative'>
+                <div className='relative max-xl:flex justify-center'>
                     <h2 className='text-[90px] font-[900] opacity-10 capitalize'>
                         skills
                     </h2>
