@@ -42,7 +42,7 @@ const About = (props: Props) => {
                     </h3>
                 </div>
 
-                <ul className='mb-4 px-10'>
+                <ul className='mb-4 max-xl:px-10'>
                     {MY_INFOR.map((item) => (
                         <li key={item.id} className='flex items-center py-1'>
                             <span className='capitalize font-bold text-lg'>

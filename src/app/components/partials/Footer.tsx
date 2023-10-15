@@ -6,7 +6,7 @@ const FOOTER_ITEMS = [
         id: 0,
         title: 'About',
         content: (
-            <p className='text-white/50'>
+            <p className='text-white/50 text-justify'>
                 Aspiring web developer passionate about creating visually
                 appealing and user-friendly websites. Limited professional
                 experience but dedicated to learning and mastering necessary
@@ -62,7 +62,7 @@ const FOOTER_ITEMS = [
 const Footer = () => {
     return (
         <footer className='flex items-center justify-center py-10 px-4 xl:px-0'>
-            <ul className='flex flex-col xl:flex-row justify-around flex-1 gap-10'>
+            <ul className='flex flex-col xl:flex-row justify-around flex-1 gap-20'>
                 {FOOTER_ITEMS.map((item) => {
                     return (
                         <li key={item.id} className='max-xl:text-center'>
