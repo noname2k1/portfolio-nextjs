@@ -35,7 +35,7 @@ const About = (props: Props) => {
     return (
         <section className='h-screen flex items-center xl:justify-center'>
             <div className=''>
-                <div className='relative max-xl:flex justify-center'>
+                <div className='relative flex justify-center'>
                     <h2 className='text-[90px] font-[900] opacity-10'>About</h2>
                     <h3 className='text-[50px] font-[700] absolute top-0'>
                         About Me
@@ -59,7 +59,7 @@ const About = (props: Props) => {
                 <a
                     download
                     href='/pdf/NinhNgocNam_WebDeveloper_CV.pdf'
-                    className='max-xl:flex justify-center'
+                    className='flex justify-center'
                 >
                     <CustomButton variant='secondary'>Download CV</CustomButton>
                 </a>
