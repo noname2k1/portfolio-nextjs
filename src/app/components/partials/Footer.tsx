@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 const FOOTER_ITEMS = [
@@ -13,7 +14,7 @@ const FOOTER_ITEMS = [
                 responsive designs and basic web applications. Strong foundation
                 in HTML, CSS, and JavaScript. Seeking opportunities to
                 collaborate and contribute to impactful online experiences.
-                Contact for web development projects or collaborations.'
+                Contact for web development projects or collaborations.
             </p>
         )
     },
@@ -22,29 +23,35 @@ const FOOTER_ITEMS = [
         title: 'Have a question?',
         content: (
             <ul>
-                <li className='flex items-center gap-4 py-2 justify-center'>
-                    <img
-                        className='invert w-6 h-6'
+                <li className='flex items-center gap-4 py-2 max-xl:justify-center'>
+                    <Image
+                        className='invert'
                         src='/images/address.png'
                         alt='icon'
+                        width={24}
+                        height={24}
                     />
                     <span>
                         14, 753, Nguyen Khoai, Thanh Tri, Hoang Mai, Ha Noi
                     </span>
                 </li>
-                <li className='flex items-center gap-4 py-2 justify-center'>
-                    <img
-                        className='invert w-6 h-6'
+                <li className='flex items-center gap-4 py-2 max-xl:justify-center'>
+                    <Image
+                        className='invert'
                         src='/images/phone.png'
                         alt='icon'
+                        width={24}
+                        height={24}
                     />
                     <span>+84388556705</span>
                 </li>
-                <li className='flex items-center gap-4 py-2 justify-center'>
-                    <img
-                        className='invert w-6 h-6'
+                <li className='flex items-center gap-4 py-2 max-xl:justify-center'>
+                    <Image
+                        className='invert'
                         src='/images/email.png'
                         alt='icon'
+                        width={24}
+                        height={24}
                     />
                     <span>ninhnamyb2001@gmail.com</span>
                 </li>

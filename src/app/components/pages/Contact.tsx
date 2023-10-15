@@ -1,4 +1,5 @@
 import classNames from 'classnames';
+import Image from 'next/image';
 import React from 'react';
 
 interface Props {}
@@ -55,10 +56,12 @@ const Contact = (props: Props) => {
                             className='flex flex-col items-center py-2 flex-1'
                         >
                             <div className='bg-white/10 w-[100px] h-[100px] flex items-center justify-center rounded-full'>
-                                <img
+                                <Image
                                     src={contact.image}
-                                    className='invert w-8 h-8 object-contain'
+                                    className='invert object-contain'
                                     alt='icon'
+                                    width={32}
+                                    height={32}
                                 />
                             </div>
                             <span className='uppercase font-normal text-lg py-5 xl:py-10'>

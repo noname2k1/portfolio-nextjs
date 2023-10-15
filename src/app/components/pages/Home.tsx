@@ -35,7 +35,7 @@ const Home = () => {
                     {slide === 0 ? (
                         <>
                             <span className='font-black text-3xl xl:text-6xl my-5'>
-                                I'm{' '}
+                                I'm{` `}
                                 <span className='text-secondary'>Ninh Nam</span>
                             </span>
                             <span className='capitalize text-3xl'>
@@ -45,10 +45,11 @@ const Home = () => {
                     ) : (
                         <>
                             <span className='font-black text-3xl xl:text-6xl my-5'>
-                                I'm{' '}
+                                I'm{` `}
                                 <span className='text-secondary'>
                                     a web developer
-                                </span>{' '}
+                                </span>
+                                {` `}
                                 based in Hanoi
                             </span>
                         </>
